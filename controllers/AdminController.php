@@ -1,6 +1,6 @@
 <?php
-require_once "models/Affiliate.php";
-use Models\Affiliate;
+require_once "models/User.php";
+use Models\User;
 class AdminController
 {
 
@@ -23,10 +23,10 @@ class AdminController
         // Perform any necessary processing
         // Return the response
                 foreach($records as $record){
-            $allData=Affiliate::update('wholesalePricePerItem', $record->value, 'itemBarcode', $record->itemBarcode);
-            $save=Affiliate::update('totalWholesalePrice', $record->totalWholesalePrice, 'itemBarcode', $record->itemBarcode);
+            $allData=User::update('wholesalePricePerItem', $record->value, 'itemBarcode', $record->itemBarcode);
+            $save=User::update('totalWholesalePrice', $record->totalWholesalePrice, 'itemBarcode', $record->itemBarcode);
         }
-        // $allData=Affiliate::update('wholesalePricePerItem', $records[0]->value, 'itemBarcode', $records[0]->itemBarcode);
+        // $allData=User::update('wholesalePricePerItem', $records[0]->value, 'itemBarcode', $records[0]->itemBarcode);
         $response = array('status' => 'success', 'message' => 'Data received successfully.',"data"=>json_encode($records[0]->itemBarcode));
         echo json_encode($response);
     }
@@ -86,7 +86,7 @@ class AdminController
             "totalWholesalePerAllItems"=> 1020
             ]
             ];
-        Affiliate::create( [
+        User::create( [
             'data'=>$_POST['data'], 
             'isSaved'=>'1', 
         ]);

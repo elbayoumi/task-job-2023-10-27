@@ -4,7 +4,7 @@ use DatabaseConnection;
 
 require_once "./database/DatabaseConnection.php";
 // use Databases\DatabaseConnection;
-class Affiliate{
+class User{
 
 static function all(){
 
@@ -23,7 +23,7 @@ static function all(){
  */
 static function update($name, $value, $nameidValue, $idValue){
     $database=new DatabaseConnection();
-    $database->storeColumn('affiliates',$name, $value, $nameidValue, $idValue);
+    $database->storeColumn('users',$name, $value, $nameidValue, $idValue);
     
 }
 static function select($sql){
@@ -34,7 +34,7 @@ static function select($sql){
 }
 static function find($id){
     $database=new DatabaseConnection();
-    $data=$database->find('affiliates',$id);
+    $data=$database->find('users',$id);
     // mysqli_close($connectToDatabase);
    return $data;
 }
@@ -46,7 +46,7 @@ static function find($id){
  */
 static function create( array $query){
     $database=new DatabaseConnection();
-    $database->create('affiliates',$query);
+    $database->create('users',$query);
     
 }
 

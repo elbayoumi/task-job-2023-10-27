@@ -8,7 +8,7 @@ class DatabaseConnection
             $servername = "localhost";
             $username = "root";
             $password = "603721";
-            $database = "AffiliateWithJson";
+            $database = "task20231027";
             $conn = new mysqli($servername, $username, $password, $database);
             if ($conn->connect_error) {
                 throw new Exception("Connection failed: " . $conn->connect_error);
