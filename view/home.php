@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="view/assets/css/index.css">
 
     <title>Home</title>
 </head>
@@ -13,7 +13,7 @@
     <div class="container">
 
         <header>
-            <img src="./assets/img/1679602564028.jpeg" alt="Logo" class="logo">
+            <img src="view/assets/img/1679602564028.jpeg" alt="Logo" class="logo">
             <!-- Add navigation links if needed -->
         </header>
 
@@ -59,6 +59,6 @@
 <script>
 
 </script>
-<script src="./assets/js/index.js"></script>
+<script src="view/assets/js/index.js"></script>
 
 </html>

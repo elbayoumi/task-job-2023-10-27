@@ -1,41 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
+require_once "router.php";
+require_once "./models/Affiliate.php";
+use Routes\Route;
 
-        }
-        body{
-            
-        }
-        form{
-            
-            margin: auto;
-            width: 50%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-        }
-        form>*{
-            /* display: block; */
-        }
-    </style>
-    <title>login</title>
-</head>
+Route::get('/',['AdminController','index']);
+Route::get('/home',['AdminController','index']);
+Route::get('/login',['AdminController','login']);
+// Route::get('/dataClient',['ClientController','dataClient']);
+// Route::post('/data',['ClientController','data']);
 
-<body>
-    <form action="">
-        <label for="username">username</label>
-        <input type="text" name="username" id="username">
-        <label for="password">password</label>
-        <input type="text" name="password" id="password">
-    </form>
-</body>
+// Route::post('/adminStoreData',function () {
+//     Route::redirect('AdminController','adminStoreData');
+// });
+// ///create new Affiliate
+// Route::post('/create',['AdminController','store']);
+// Route::get('/client',function () {
+//     Route::redirect('ClientController','index');
+// });
+// Route::post('/clientData',function () {
+//     Route::redirect('ClientController','data');
+// });
 
-</html>
+$actions= $_SERVER['REQUEST_URI'];
+Route::dispatch(
+    $actions
+);
