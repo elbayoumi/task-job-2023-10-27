@@ -19,7 +19,6 @@ class AdminController
         // print_r($_POST['username']);
         // die($_POST);
         User::create( [
-            'id'=>1,
             'username'=>$_POST['username'],
             'password'=>$_POST['password']
         ]);
