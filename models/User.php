@@ -23,7 +23,7 @@ static function all(){
  */
 static function update($name, $value, $nameidValue, $idValue){
     $database=new DatabaseConnection();
-    $database->storeColumn('users',$name, $value, $nameidValue, $idValue);
+    $database->storeColumn('Users',$name, $value, $nameidValue, $idValue);
     
 }
 static function select($sql){
@@ -34,7 +34,7 @@ static function select($sql){
 }
 static function find($id){
     $database=new DatabaseConnection();
-    $data=$database->find('users',$id);
+    $data=$database->find('Users',$id);
     // mysqli_close($connectToDatabase);
    return $data;
 }
@@ -46,7 +46,7 @@ static function find($id){
  */
 static function create( array $query){
     $database=new DatabaseConnection();
-    $database->create('users',$query);
+    $database->create('Users',$query);
     
 }
 

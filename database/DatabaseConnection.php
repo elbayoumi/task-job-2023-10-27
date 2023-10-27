@@ -33,8 +33,8 @@ class DatabaseConnection
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         } else {
-            $sql = "SELECT * FROM affiliates";
-            // $sql = "UPDATE 'affiliates' SET 'WholesalePricePerItem' = '1' WHERE 'itemBarcode' = '214213423'";
+            $sql = "SELECT * FROM Users";
+            // $sql = "UPDATE 'Users' SET 'WholesalePricePerItem' = '1' WHERE 'itemBarcode' = '214213423'";
 
             $result = $conn->query($sql);
 
@@ -76,8 +76,8 @@ class DatabaseConnection
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         } else {
-            // $sql = "SELECT * FROM affiliates";
-            // $sql = "UPDATE 'affiliates' SET 'WholesalePricePerItem' = '1' WHERE 'itemBarcode' = '214213423'";
+            // $sql = "SELECT * FROM Users";
+            // $sql = "UPDATE 'Users' SET 'WholesalePricePerItem' = '1' WHERE 'itemBarcode' = '214213423'";
 
             $result = $conn->query($sql);
 
@@ -131,6 +131,7 @@ class DatabaseConnection
             // 
             $sql = "INSERT INTO $table ($names) VALUES ($values);";
             // die($sql);
+            // die($sql);
             if ($conn->query($sql) === TRUE) {
                 return "New record created successfully";
             } else {
@@ -145,6 +146,6 @@ class DatabaseConnection
 
 
 
-    // INSERT INTO `affiliates` (`offerName`, `productName`, `itemBarcode`, `averageCostOfItem`, `cost`, `totalCountOfItemBarcode`, `totalCostOfItemBarcode`, `supplierName`, `ownerName`, `totalWholesalePrice`, `WholesalePricePerItem`) VALUES ('Offer 12', 'Product 12', '3221166', '12', '121.00', '21', '521.00', 'Supplier A', 'Owner 12', '89', '1699');
+    // INSERT INTO `Users` (`offerName`, `productName`, `itemBarcode`, `averageCostOfItem`, `cost`, `totalCountOfItemBarcode`, `totalCostOfItemBarcode`, `supplierName`, `ownerName`, `totalWholesalePrice`, `WholesalePricePerItem`) VALUES ('Offer 12', 'Product 12', '3221166', '12', '121.00', '21', '521.00', 'Supplier A', 'Owner 12', '89', '1699');
 
 }
