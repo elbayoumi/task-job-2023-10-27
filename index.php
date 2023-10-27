@@ -20,15 +20,15 @@
         <div class="slider-container">
             <div class="slider">
 
-                <figure> <img src="https://www.w3schools.com/tags/img_girl.jpg" alt="Slide 1"></figure>
-                <figure> <img src="https://www.w3schools.com/tags/img_girl.jpg" alt="Slide 2"></figure>
-                <figure> <img src="https://www.w3schools.com/tags/img_girl.jpg" alt="Slide 3"></figure>
-                <figure> <img src="https://www.w3schools.com/tags/img_girl.jpg" alt="Slide 4"></figure>
-                <figure> <img src="https://www.w3schools.com/tags/img_girl.jpg" alt="Slide 5"></figure>
-                <figure> <img src="https://www.w3schools.com/tags/img_girl.jpg" alt="Slide 6"></figure>
-                <figure> <img src="https://www.w3schools.com/tags/img_girl.jpg" alt="Slide 7"></figure>
-                <figure> <img src="https://www.w3schools.com/tags/img_girl.jpg" alt="Slide 8"></figure>
-                <figure> <img src="https://www.w3schools.com/tags/img_girl.jpg" alt="Slide 9"></figure>
+                 <img src="https://www.w3schools.com/tags/img_girl.jpg" alt="Slide 1">
+                 <img src="https://www.w3schools.com/tags/img_girl.jpg" alt="Slide 2">
+                 <img src="https://www.w3schools.com/tags/img_girl.jpg" alt="Slide 3">
+                 <img src="https://www.w3schools.com/tags/img_girl.jpg" alt="Slide 4">
+                 <img src="https://www.w3schools.com/tags/img_girl.jpg" alt="Slide 5">
+                 <img src="https://www.w3schools.com/tags/img_girl.jpg" alt="Slide 6">
+                 <img src="https://www.w3schools.com/tags/img_girl.jpg" alt="Slide 7">
+                 <img src="https://www.w3schools.com/tags/img_girl.jpg" alt="Slide 8">
+                 <img src="https://www.w3schools.com/tags/img_girl.jpg" alt="Slide 9">
 
             </div>
             <button class="prev-btn">Previous</button>
