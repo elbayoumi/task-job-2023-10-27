@@ -31,6 +31,8 @@ header {
     height: auto;
     object-fit: cover;
     display: block;
+    background-repeat: no-repeat;
+
 }
 
 .main-content {
