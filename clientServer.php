@@ -1,9 +1,9 @@
 <?php
 // Fetch data from your data source (database, API, etc.)
-require_once "models/Affiliate.php";// Fetch data from your data source (database, API, etc.)
+require_once "models/User.php";// Fetch data from your data source (database, API, etc.)
 require_once "./Request/Param.php";
 use Request\Params;
-use Models\Affiliate;
+use Models\User;
 
 $params= (Params::params())[0];
 $index_of_a= strpos($params, '?');
@@ -11,7 +11,7 @@ $param = substr($params, 0, $index_of_a);
 if($param===''){
     $param=$params;
 }
-$data = Affiliate::find($param);
+$data = User::find($param);
 $allData=$data[0]['data'];
 $allDataJSON = json_decode($data[0]['data'],true);
 

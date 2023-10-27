@@ -1,7 +1,7 @@
 <?php
 
 require_once "router.php";
-require_once "./models/Affiliate.php";
+require_once "./models/User.php";
 use Routes\Route;
 
 Route::get('/',['AdminController','index']);
