@@ -14,6 +14,11 @@ class AdminController
 
         require 'view/login.php';
     }
+    public function sign()
+    {
+
+        require 'view/home.php';
+    }
     public function adminStoreData()
     {
         // Fetch data from your data source (database, API, etc.)

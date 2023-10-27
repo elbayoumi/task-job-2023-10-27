@@ -10,7 +10,7 @@
 </head>
 
 <body>
-<form method="post" action="" name="signin-form">
+<form method="post" action="/sign" name="signin-form">
   <div class="form-element">
     <label>Username</label>
     <input type="text" name="username" pattern="[a-zA-Z0-9]+" required />
